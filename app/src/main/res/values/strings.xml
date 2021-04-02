@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Movapp</string>
+    <string name="country_prompt">Choose Country</string>
+    <string-array name="countries">
+        <item>US United States</item>
+        <item>AF Afghanistan</item>
+        <item>AL Albania</item>
+        <item>DZ Algeria</item>
+        <item>AR Argentina</item>
+        <item>AM Armenia</item>
+        <item>AU Australia</item>
+        <item>AT Austria</item>
+        <item>AZ Azerbaijan</item>
+        <item>BH Bahrain</item>
+        <item>BD Bangladesh</item>
+        <item>BE Belgium</item>
+        <item>BO Bolivia</item>
+        <item>BA Bosnia and Herzegovina</item>
+        <item>BR Brazil</item>
+        <item>BG Bulgaria</item>
+        <item>CM Cameroon</item>
+        <item>CA Canada</item>
+        <item>CL Chile</item>
+        <item>CN China</item>
+        <item>CO Colombia</item>
+        <item>CR Costa Rica</item>
+        <item>HR Croatia</item>
+        <item>CU Cuba</item>
+        <item>CZ Czech Republic</item>
+        <item>DK Denmark</item>
+        <item>EC Ecuador</item>
+        <item>EG Egypt</item>
+        <item>FI Finland</item>
+        <item>FR France</item>
+        <item>DE Germany</item>
+        <item>CR Greece</item>
+        <item>HK Hong Kong</item>
+        <item>HU Hungary</item>
+        <item>IS Iceland</item>
+        <item>IN India</item>
+        <item>ID Indonesia</item>
+        <item>IR Iran</item>
+        <item>IQ Iraq</item>
+        <item>IE Ireland</item>
+        <item>IT Italy</item>
+        <item>JP Japan</item>
+        <item>JO Jordan</item>
+        <item>KW Kuwait</item>
+        <item>LV Latvia</item>
+        <item>LB Lebanon</item>
+        <item>LY Libya</item>
+        <item>LT Lithuania</item>
+        <item>LU Luxembourg</item>
+        <item>MY Malaysia</item>
+        <item>MX Mexico</item>
+        <item>MA Morocco</item>
+        <item>NL Netherlands</item>
+        <item>NZ New Zealand</item>
+        <item>NG Nigeria</item>
+        <item>KP North Korea</item>
+        <item>NO Norway</item>
+        <item>OM Oman</item>
+        <item>PK Pakistan</item>
+        <item>PA Panama</item>
+        <item>PY Paraguay</item>
+        <item>PE Peru</item>
+        <item>PH Philippines</item>
+        <item>PL Poland</item>
+        <item>PT Portugal</item>
+        <item>QA Qatar</item>
+        <item>RO Romania</item>
+        <item>RU Russia</item>
+        <item>SA Saudi Arabia</item>
+        <item>SN Senegal</item>
+        <item>RS Serbia</item>
+        <item>SG Singapore</item>
+        <item>SK Slovakia</item>
+        <item>SI Slovenia</item>
+        <item>ZA South Africa</item>
+        <item>KR South Korea</item>
+        <item>SS South Sudan</item>
+        <item>ES Spain</item>
+        <item>SD Sudan</item>
+        <item>SZ Swaziland</item>
+        <item>SE Sweden</item>
+        <item>CH Switzerland</item>
+        <item>SY Syria</item>
+        <item>TW Taiwan</item>
+        <item>TH Thailand</item>
+        <item>TN Tunisia</item>
+        <item>TR Turkey</item>
+        <item>UG Uganda</item>
+        <item>UA Ukraine</item>
+        <item>AE United Arab Emirates</item>
+        <item>GB United Kingdom</item>
+        <item>UY Uruguay</item>
+        <item>VE Venezuela</item>
+        <item>VN Vietnam</item>
+        <item>YE Yemen</item>
+        <item>ZM Zambia</item>
+        <item>ZW Zimbabwe</item>
+    </string-array>
+
+</resources>

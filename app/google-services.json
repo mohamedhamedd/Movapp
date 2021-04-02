@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "696433642240",
+    "project_id": "movies-news-306004",
+    "storage_bucket": "movies-news-306004.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696433642240:android:e2e65b03280159adab81e5",
+        "android_client_info": {
+          "package_name": "com.moapps.moviesnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "696433642240-o9o8oj9pn5d5d3qeehto8j6q02itpb94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiKsWf7sHQT2Cqof7AuifDs3xQ5q-5qqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "696433642240-o9o8oj9pn5d5d3qeehto8j6q02itpb94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

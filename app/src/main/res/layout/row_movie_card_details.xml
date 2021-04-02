@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_main"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/row_layout_movie_card_details">
+
+    <io.armcha.elasticview.ElasticView
+        android:id="@+id/row_layout2_movie_card_details"
+        android:layout_width="130dp"
+        android:layout_height="160dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="@color/background_main">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/row_image_movie_card_details"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_background"/>
+
+            <ProgressBar
+                android:id="@+id/row_progress_movie_card_details"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:indeterminate="true"
+                android:indeterminateTint="#FDCC00"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+    </io.armcha.elasticview.ElasticView>
+
+    <LinearLayout
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/row_title_movie_card_details"
+            android:text="Captin Marvel"
+            android:fontFamily="@font/ttnorms_bold"
+            android:textSize="22sp"
+            android:textColor="@color/font_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/row_overview_movie_card_details"
+            android:text="Super spy lance sterling Walter barcklet are almost exact. lance is smooth, swav and dibnour and marvel"
+            android:fontFamily="@font/ttnorms_medium"
+            android:textSize="18sp"
+            android:textColor="@color/font_color_grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_rate"/>
+
+            <TextView
+                android:id="@+id/row_rate_movie_card_details"
+                android:text="9.7"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ttnorms_medium"
+                android:textSize="17sp"
+                android:textColor="@color/font_color"
+                android:layout_marginStart="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
