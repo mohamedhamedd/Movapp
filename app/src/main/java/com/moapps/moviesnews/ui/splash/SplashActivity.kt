@@ -18,6 +18,8 @@ class SplashActivity : AppCompatActivity() {
         StartAppAd.disableSplash()
         setContentView(R.layout.activity_main)
 
+        StartAppAd.disableSplash()
+
         hideSystemUI(this)
 
         val time:Long = 3000
