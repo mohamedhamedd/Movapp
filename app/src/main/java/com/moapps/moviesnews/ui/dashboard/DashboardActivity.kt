@@ -15,12 +15,13 @@ import com.moapps.moviesnews.ui.search.SearchActivity
 import com.startapp.sdk.ads.splash.SplashConfig
 import com.startapp.sdk.adsbase.StartAppAd
 import com.startapp.sdk.adsbase.StartAppSDK
+import hotchemi.android.rate.AppRate
 import kotlinx.android.synthetic.main.activity_dashboard.*
 import maes.tech.intentanim.CustomIntent
 import java.util.ArrayList
 
 class DashboardActivity : AppCompatActivity() {
-    lateinit var binding:ActivityDashboardBinding
+    lateinit var binding: ActivityDashboardBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDashboardBinding.inflate(layoutInflater)
@@ -35,24 +36,25 @@ class DashboardActivity : AppCompatActivity() {
         binding.viewPager.adapter = viewPagerAdapter
 
         getSearchText()
+        rateUs()
 
     }
 
-    private fun getSearchText(){
+    private fun getSearchText() {
         binding.searchBtn.setOnClickListener {
             val txt = binding.searchText.text.trim().toString()
-            if (!txt.isNullOrEmpty()){
-                val intent = Intent(this,SearchActivity::class.java)
-                intent.putExtra("txt",txt)
+            if (!txt.isNullOrEmpty()) {
+                val intent = Intent(this, SearchActivity::class.java)
+                intent.putExtra("txt", txt)
                 startActivity(intent)
-                CustomIntent.customType(this,"left-to-right")
+                CustomIntent.customType(this, "left-to-right")
             }
         }
 
     }
 
     class ViewPagerAdapter(fm: FragmentManager, behavior: Int) :
-            FragmentPagerAdapter(fm, behavior) {
+        FragmentPagerAdapter(fm, behavior) {
         private val fragments: MutableList<Fragment> = ArrayList()
         private val fragmentstitle: MutableList<String> = ArrayList()
         fun addFragment(fragment: Fragment, titleTab: String) {
@@ -71,6 +73,18 @@ class DashboardActivity : AppCompatActivity() {
         override fun getPageTitle(position: Int): CharSequence {
             return fragmentstitle[position]
         }
+
+    }
+
+    fun rateUs() {
+        AppRate.with(this)
+            .setInstallDays(1) // default 10, 0 means install day.
+            .setLaunchTimes(2) // default 10
+            .setRemindInterval(2) // default 1
+            .monitor()
+
+        // Show a dialog if meets conditions
+        AppRate.showRateDialogIfMeetsConditions(this);
 
     }
 

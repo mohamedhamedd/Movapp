@@ -93,5 +93,8 @@ dependencies {
     //Start App
     implementation 'com.startapp:inapp-sdk:4.8.10'
 
+    //rating us
+    implementation 'com.github.hotchemi:android-rate:1.0.1'
+
 
 }
