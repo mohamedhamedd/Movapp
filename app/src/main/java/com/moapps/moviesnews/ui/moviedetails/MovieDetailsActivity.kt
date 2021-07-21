@@ -20,8 +20,6 @@ import com.moapps.moviesnews.databinding.ActivityMovieDetailsBinding
 import com.moapps.moviesnews.ui.watchtrailer.WatchTrailerActivity
 import com.moapps.moviesnews.utilis.Credentials
 import com.moapps.moviesnews.utilis.makeToast
-import com.startapp.sdk.adsbase.StartAppAd
-import com.startapp.sdk.adsbase.StartAppSDK
 import kotlinx.android.synthetic.main.activity_movie_details.*
 import maes.tech.intentanim.CustomIntent
 import org.kodein.di.Kodein
@@ -70,7 +68,6 @@ class MovieDetailsActivity : AppCompatActivity(), KodeinAware,MovieDetailsInterf
                 }
                     startActivity(intent)
                     CustomIntent.customType(this, "left-to-right")
-                    StartAppAd.showAd(this)
             })
         }
 

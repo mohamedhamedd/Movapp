@@ -10,13 +10,28 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.watchtrailer.WatchTrailerActivity"
-        android:background="@color/background_main">
+        android:background="@color/background_main"
+        tools:context=".ui.watchtrailer.WatchTrailerActivity">
 
-        <com.google.android.youtube.player.YouTubePlayerView
-            android:id="@+id/youtube_player"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/youtube_player"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.startapp.sdk.ads.banner.Mrec
+                android:layout_gravity="center"
+                android:id="@+id/startAppMrec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+
 
         <io.armcha.elasticview.ElasticView
             android:id="@+id/btn_back_trailer"
